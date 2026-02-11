@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maan Dabwali | Agriculture Land Services Punjab Haryana Rajasthan</title>
+  <meta name="description" content="Maan Dabwali offers agriculture land purchase, sale and investment services across Punjab, Haryana and Rajasthan for local and NRI clients. Trusted guidance with complete safety." />
+  <meta name="keywords" content="Maan Dabwali, Agriculture Land Punjab, Haryana farm land, Rajasthan agriculture property, NRI land India, Dabwali land advisor, buy sell farm land India, agriculture investment Punjab Haryana Rajasthan" />
+  <meta name="author" content="Maan Dabwali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    /* RESET */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth;}
+
+    body {background: #f9f9f9; color: #333; line-height: 1.6;}
+
+    /* HEADER */
+    header {
+      background: linear-gradient(90deg, #7a1f2b, #c89b00);
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Expressive Logo Title */
+    .logo-container {
+      text-align: center;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 1.2;
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .logo-title .punjabi {
+      display: block;
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: #FFD700;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {color: #000;}
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1603575448360-153f093fd0f4?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {font-size: 48px; font-weight: 900; margin-bottom: 15px;}
+    .hero p {max-width: 850px; margin: 0 auto 20px; font-size: 18px;}
+    .btn {display:inline-block; background:#ffd700; padding:12px 35px; color:#000; font-weight:700; text-decoration:none; border-radius:5px; transition: background-color 0.3s ease;}
+    .btn:hover {background:#c89b00; color:#fff;}
+
+    section {padding: 80px 8%;}
+    section h2 {text-align:center; margin-bottom:40px; font-size:32px; color:#7a1f2b;}
+
+    /* BLOG */
+    .blog p {margin-bottom:20px; text-align: justify; font-size:16px; max-width:900px; margin-left:auto; margin-right:auto;}
+
+    /* FORM */
+    form {max-width:600px; margin:auto;}
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size:16px;
+    }
+    form button {
+      background:#7a1f2b;
+      color:#fff;
+      padding:12px;
+      border:none;
+      width:100%;
+      font-weight:700;
+      cursor:pointer;
+      font-size:18px;
+      border-radius:5px;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {background:#5d1531;}
+
+    /* RATING */
+    .stars {display:flex; justify-content:center; flex-direction: row-reverse; margin-bottom:15px;}
+    .stars input {display:none;}
+    .stars label {font-size:30px; color:#ccc; cursor:pointer; transition: color 0.3s ease; user-select:none;}
+    .stars input:checked ~ label, .stars label:hover, .stars label:hover ~ label {color:#ffd700;}
+
+    /* COMMENT */
+    .comment-box {max-width:600px; margin:auto; text-align:center;}
+    .comment-box textarea {width:100%; padding:10px; margin:10px 0; font-size:16px; border-radius:5px; border:1px solid #ccc; resize: vertical;}
+    .comment-box button {background:#ffd700; padding:10px 25px; border:none; font-weight:700; cursor:pointer; border-radius:5px; transition: background-color 0.3s ease;}
+    .comment-box button:hover {background:#c89b00; color:#fff;}
+
+    /* FOOTER */
+    footer {background:#7a1f2b; color:#fff; text-align:center; padding:40px 10px;}
+    footer p {margin:8px 0; font-size:16px;}
+    .social-icons {margin-top:20px;}
+    .social-icons a {margin:0 12px; color:#ffd700; font-size:20px; text-decoration:none; transition: color 0.3s ease;}
+    .social-icons a:hover {color:#fff;}
+    .icon {display:inline-block; width:24px; height:24px; background-color:#ffd700; border-radius:4px; margin-right:5px; vertical-align:middle;}
+
+    /* RESPONSIVE */
+    @media (max-width:768px){.hero h1{font-size:36px;}.logo-title{font-size:36px;}.logo-title .punjabi{font-size:24px;}}
+    @media (max-width:480px){.hero h1{font-size:28px;}.logo-title{font-size:28px;}.logo-title .punjabi{font-size:20px;}nav a{margin:0 8px;font-size:14px;}}
+  </style>
+<header>
+  <div class="logo-container" aria-label="Logo">
+    <h1 class="logo-title">
+      <span class="english">Maan Dabwali</span><br>
+      <span class="punjabi">ਮਾਨ ਡੱਬਵਾਲੀ</span>
+    </h1>
+  </div>
+
+  <nav aria-label="Primary Navigation">
+    <a href="#home" tabindex="0">Home</a>
+    <a href="#about" tabindex="0">About</a>
+    <a href="#blog" tabindex="0">Insights</a>
+    <a href="#contact" tabindex="0">Contact</a>
+  </nav>
+</header>
+
+<style>
+/* Logo Container */
+.logo-container {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo Title Styling */
+.logo-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #FFD700, #FF8C00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.logo-title .punjabi {
+  display: block;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #FFD700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Navigation */
+header {
+  background: linear-gradient(90deg, #7a1f2b, #c89b00);
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 36px;
+  }
+  .logo-title .punjabi {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-title {
+    font-size: 28px;
+  }
+  .logo-title .punjabi {
+    font-size: 20px;
+  }
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+}
+</style>
+
+
+<style>
+/* Logo Icon */
+.logo-icon {
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keep the rest same as before */
+.logo-container {text-align:center; flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+.logo-title {font-family:'Poppins',sans-serif; font-weight:900; font-size:48px; line-height:1.2; background:linear-gradient(90deg,#FFD700,#FF8C00); -webkit-background-clip:text; -webkit-text-fill-color:transparent; text-shadow:2px 2px 5px rgba(0,0,0,0.4);}
+.logo-title .punjabi {display:block; font-size:32px; letter-spacing:2px; color:#FFD700; text-shadow:1px 1px 3px rgba(0,0,0,0.5);}
+
+/* Responsive adjustments */
+@media(max-width:768px){.logo-title{font-size:36px;}.logo-title .punjabi{font-size:24px;} .logo-icon svg{width:50px;height:50px;}}
+@media(max-width:480px){.logo-title{font-size:28px;}.logo-title .punjabi{font-size:20px;} .logo-icon svg{width:40px;height:40px;}}
+</style>
+
+
+<main>
+  <section class="hero" id="home" role="banner">
+    <h1>Trusted Agriculture Land Services</h1>
+    <p>We respectfully assist local and NRI clients across Punjab, Haryana and Rajasthan for agriculture land purchase, sale, and investment. Your deal's safety is our responsibility to make it safer from guidance till over come of your transaction. We work on your desires with polite communication and transparent guidance.</p>
+    <a href="#contact" class="btn" role="button" aria-label="Contact us">Connect With Us</a>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title">About Maan Dabwali</h2>
+    <p style="max-width:850px; margin: 0 auto; text-align:center; line-height:1.8;">
+      With a dedicated team across Punjab, Haryana, and Rajasthan, we focus mainly on agriculture land. Services available to your convenience for buying, selling, and investment planning. Clients living abroad can comfortably connect with us for guidance and coordination in India. We assist respectfully at every stage with clarity and understanding.
+    </p>
+  </section>
+
+  <section class="blog" id="blog" aria-labelledby="blog-title">
+    <h2 id="blog-title">Agriculture Land Services Across Punjab, Haryana & Rajasthan</h2>
+    <p>Maan Dabwali provides dedicated agriculture land services in Punjab, Haryana, and Rajasthan. These regions are known for their fertile land, irrigation strength, and strong farming culture. Our team carefully coordinates land purchase, sale, and investment opportunities with proper understanding and respectful communication.</p>
+    <p>Punjab offers productive agricultural soil and well-developed farming systems. Haryana continues to grow with strong agricultural infrastructure and connectivity. Rajasthan is expanding its agricultural landscape through irrigation projects and farming improvements. Across these states, agriculture land continues to remain valuable for families and investors.</p>
+    <p>For clients residing abroad who wish to invest, sell or purchase land in India, we provide clear step-by-step assistance. Distance should not create difficulty. We maintain communication and ensure that documentation guidance is clearly explained. Your deal's safety is our responsibility to make it safer from guidance till over come of your transaction.</p>
+    <p>Local clients also receive careful support in understanding land requirements, availability, and procedural guidance. We work on your desires and ensure that every conversation is handled with clarity and patience. Our intention is to build trust through respectful coordination and long-term association.</p>
+    <p>Services available to your convenience across Punjab, Haryana, and Rajasthan. We remain committed to assisting both local and NRI clients with complete attention and reliability.</p>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Client Information Form</h2>
+    <form id="client-form" aria-label="Client information form">
+      <input type="text" name="firstname" placeholder="First Name" required aria-required="true" />
+      <input type="text" name="lastname" placeholder="Last Name" required aria-required="true" />
+      <input type="email" name="email" placeholder="Email Address" required aria-required="true" />
+      <input type="tel" name="phone" placeholder="Phone Number" required aria-required="true" />
+      <select name="requirement" required aria-required="true">
+        <option value="" disabled selected>Select Requirement</option>
+        <option value="purchase">Purchase Agriculture Land</option>
+        <option value="sell">Sell Agriculture Land</option>
+        <option value="investment">Investment Guidance</option>
+      </select>
+      <textarea name="details" rows="4" placeholder="Please describe your requirement..." aria-label="Requirement details"></textarea>
+      <button type="submit">Submit Information</button>
+    </form>
+  </section>
+
+  <section aria-labelledby="reviews-title">
+    <h2 id="reviews-title">Client Rating & Reviews</h2>
+    <form id="review-form" aria-label="Client reviews form">
+      <div class="stars" role="radiogroup" aria-labelledby="stars-label">
+        <span id="stars-label" class="sr-only">Star rating</span>
+        <input type="radio" id="star5" name="rating" value="5" aria-label="5 stars" />
+        <label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4" aria-label="4 stars" />
+        <label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3" aria-label="3 stars" />
+        <label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2" aria-label="2 stars" />
+        <label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1" aria-label="1 star" />
+        <label for="star1">★</label>
+      </div>
+
+      <div class="comment-box">
+        <textarea id="review-comment" name="comment" rows="4" placeholder="Please share your experience after meeting with us..." aria-label="Review comment"></textarea>
+        <button type="submit">Submit Review</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>📞 +91-99920-00876</p>
+  <p>✉ info@maandabwali.com</p>
+  <div class="social-icons" aria-label="Social media links">
+    <a href="https://facebook.com/Maan-Dabwali" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+    <a href="https://wa.me/919992000876" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+    <a href="mailto:info@maandabwali.com" aria-label="Email">Gmail</a>
+    <a href="https://instagram.com/maandabwali123" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+    <a href="tel:+919992000876" aria-label="Call">Call</a>
+    <a href="sms:+919992000876" aria-label="Text message">Text</a>
+    <a href="#" aria-label="Map Icon"><span class="icon">📍</span> Map</a>
+    <a href="#" aria-label="YouTube Icon"><span class="icon">▶️</span> YouTube</a>
+  </div>
+  <p style="margin-top:20px;">© 2026 Maan Dabwali | ਮਾਨ ਡੱਬਵਾਲੀ | Services available to your convenience</p>
+</footer>
+
+<script>
+  // Client Info Form
+  document.getElementById('client-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you for submitting your information. We will contact you shortly.');
+    this.reset();
+  });
+
+  // Review Form
+  document.getElementById('review-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const rating = this.querySelector('input[name="rating"]:checked');
+    const comment = document.getElementById('review-comment').value.trim();
+    if(!rating){ alert('Please select a star rating.'); return; }
+    if(comment.length<10){ alert('Please enter a meaningful comment.'); return; }
+    alert('Thank you for your review!');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
